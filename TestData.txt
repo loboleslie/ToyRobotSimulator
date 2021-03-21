@@ -1,0 +1,57 @@
+================================
+TEST DATA
+================================
+
+1)Test 1
+PLACE 0,0,NORTH
+MOVE
+MOVE
+MOVE
+MOVE
+MOVE
+REPORT
+Output: 0,5,NORTH
+
+2) Test 2
+PLACE 0,5,NORTH
+MOVE
+REPORT
+Output: 0,5,NORTH
+RIGHT
+RIGHT
+REPORT
+Output: 0,5,SOUTH
+
+3) Test 3
+PLACE 0,5,SOUTH
+MOVE
+REPORT
+Output: 0,4,SOUTH
+
+4) Test 4
+PLACE 0,4,SOUTH
+LEFT
+REPORT
+Output: 0,4,EAST
+
+5) Test 5
+PLACE 0,4,EAST
+MOVE
+REPORT
+Output: 1,4,EAST
+RIGHT
+RIGHT
+REPORT
+Output: 1,4,WEST
+
+6) Test 6
+PLACE 1,4,EAST
+MOVE
+REPORT
+Output: 0,4,WEST
+RIGHT
+REPORT
+Output: 0,4,NORTH
+MOVE
+REPORT
+Output: 0,5,NORTH
